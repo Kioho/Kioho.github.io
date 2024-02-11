@@ -3,6 +3,7 @@ body {
     background-color: black;
 }
 
-.intro {
+.intro h1,
+.intro p {
     text-align: center;
 }
