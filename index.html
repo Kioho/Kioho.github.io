@@ -19,8 +19,9 @@
         <p id="p1">Hello World!</p>
 
         <script type="text/javascript">
-            let po = createStory(); 
-            document.getElementById("p1").innerHTML = po;
+            document.addEventListener("DOMContentLoaded", (event) => {
+                document.getElementById("p1").innerHTML = createStory();
+            }
         </script>
         
         <p id="randomStory">test</p>
