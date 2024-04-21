@@ -3,6 +3,7 @@
     <head>
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+        <script src="https://github.com/Kioho/Mixed_Messages/blob/main/random_story.js"></script>
     </head>
     
     <body>
@@ -11,5 +12,12 @@
             <p>Welcome to my website!</p>
             <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
         </div>
+        <div>
+            <p id="randomStory"></p>
+        </div>
+        <script>
+            let x = document.getElementById('randomStory');
+            x.innerHTML = createStory();
+        </script>
     </body>
 </html>
