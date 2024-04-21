@@ -20,4 +20,4 @@ const createStory = () => {
     return randomStory;
 };
 
-console.log(createStory());
+module.exports = { createStory }
