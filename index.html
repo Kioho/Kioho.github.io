@@ -4,8 +4,11 @@
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
         <script type="text/javascript" src="./random_story.js">
+            function addStory (event, stringStory=createStory()) {
+                document.getElementById("p1").innerHTML = stringStory;
+            }
+            document.addEventListener("DOMContentLoaded", addStory)
         </script>
-        <script type="text/javascript" src="random_story.js"></script>
     </head>
     
     <body>
@@ -19,9 +22,7 @@
         <p id="p1">Hello World!</p>
 
         <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", (event) => {
-                document.getElementById("p1").innerHTML = createStory();
-            }
+            
         </script>
         
         <p id="randomStory">test</p>
