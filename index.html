@@ -3,7 +3,10 @@
     <head>
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-        <script src="https://github.com/Kioho/Mixed_Messages/blob/main/random_story.js"></script>
+        <script src="./random_story.js" defer>
+            let x = document.getElementById('randomStory');
+            x.innerHTML = createStory();
+        </script>
     </head>
     
     <body>
@@ -15,9 +18,5 @@
         <div>
             <p id="randomStory"></p>
         </div>
-        <script>
-            let x = document.getElementById('randomStory');
-            x.innerHTML = createStory();
-        </script>
     </body>
 </html>
