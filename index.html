@@ -4,8 +4,6 @@
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
         <script type="text/javascript" src="./random_story.js">
-            
-            document.addEventListener("DOMContentLoaded", addStory)
         </script>
     </head>
     
@@ -17,15 +15,14 @@
         </div>
 
         
-        <p id="p1">Hello World!</p>
+        <button onclick="changeStory()">Click me</button>
 
-        <script type="text/javascript">
-            async function addStory () {
-                let stringStory = await createStory();
-                return document.getElementById("p1").innerHTML = stringStory;
+        <p id="story"></p>
+
+        <script>
+            function changeStory() {
+                document.getElementById("story").innerHTML = createStory();
             }
         </script>
-        <button onclick="addStory()">Change Story</button>
-        <p id="randomStory"></p>
     </body>
 </html>
