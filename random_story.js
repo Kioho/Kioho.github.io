@@ -12,7 +12,7 @@ const getPart = storyPartArr => {
     return storyPartArr[getRandom(storyPartArr.length)];
 };
 
-const createStory = () => {
+function createStory () {
     const parts = [ getPart(firstPart), getPart(secondPart), getPart(thirdPart), getPart(fourthPart)];
     console.log(asciiArt.animals[parts[0]]);
     const randomStory = `There once was a ${parts[0]} that ${parts[1]} to ${parts[2]} all the way to the ${parts[3]}`;
