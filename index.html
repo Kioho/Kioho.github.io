@@ -17,11 +17,17 @@
         
         <button onclick="changeStory()">Click me</button>
 
-        <p id="story"></p>
+        <p id="story">ChangeStory</p>
 
         <script>
             function changeStory() {
-                document.getElementById("story").innerHTML = createStory();
+                let y = createStory();
+                if (y) {
+                    document.getElementById("story").innerHTML = y;
+                }
+                else {
+                    document.getElementById("story").innerHTML = "SEPEMONGO";
+                }
             }
         </script>
     </body>
