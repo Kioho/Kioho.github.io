@@ -3,9 +3,10 @@
     <head>
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-        <script type="text/javascript" src="./random_story.js"></script>
-        <script type="text/javascript" defer>
+        <script type="text/javascript" src="./random_story.js" defer>
             let x = document.getElementById('randomStory');
+            x.INNERHTML = 'sepe';
+            x.style.color = 'green'
             x.innerHTML = createStory();
         </script>
     </head>
@@ -19,5 +20,9 @@
         <div>
             <p id="randomStory">test</p>
         </div>
+        <script type="text/javascript" defer>
+            let x = document.getElementById('randomStory');
+            x.innerHTML = createStory();
+        </script>
     </body>
 </html>
