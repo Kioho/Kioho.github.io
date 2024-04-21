@@ -20,11 +20,12 @@
         <p id="p1">Hello World!</p>
 
         <script type="text/javascript">
-            function addStory (event, stringStory="error") {
-                document.getElementById("p1").innerHTML = stringStory;
+            async function addStory () {
+                let stringStory = await createStory();
+                return document.getElementById("p1").innerHTML = stringStory;
             }
         </script>
-        <button onclick="addStory(createStory())">Change Story</button>
+        <button onclick="addStory()">Change Story</button>
         <p id="randomStory"></p>
     </body>
 </html>
