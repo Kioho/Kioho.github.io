@@ -22,9 +22,10 @@
             <p id="randomStory">test</p>
         </div>
         <script type="text/javascript" defer>
-            let y = document.getElementById('randomStory');
+            let y = document.getElementById("randomStory");
             let sep = createStory();
-            x.innerHTML = sep;
+            y.innerHTML = sep;
+            document.getElementById("randomStory").innerHTML = "New text!";
         </script>
     </body>
 </html>
