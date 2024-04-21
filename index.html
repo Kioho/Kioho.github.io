@@ -4,9 +4,7 @@
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
         <script type="text/javascript" src="./random_story.js">
-            function addStory (event, stringStory=createStory()) {
-                document.getElementById("p1").innerHTML = stringStory;
-            }
+            
             document.addEventListener("DOMContentLoaded", addStory)
         </script>
     </head>
@@ -22,16 +20,11 @@
         <p id="p1">Hello World!</p>
 
         <script type="text/javascript">
-            
+            function addStory (event, stringStory="error") {
+                document.getElementById("p1").innerHTML = stringStory;
+            }
         </script>
-        <button onclick="addStory()">Change Story</button>
+        <button onclick="addStory(createStory())">Change Story</button>
         <p id="randomStory"></p>
-        
-        <script type="text/javascript">
-            let y = document.getElementById("randomStory");
-            let sep = createStory();
-            y.innerHTML = sep;
-            document.getElementById("randomStory").innerHTML = "New text!";
-        </script>
     </body>
 </html>
