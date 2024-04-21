@@ -3,8 +3,7 @@
     <head>
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-        <script type="text/javascript" src="./random_story.js">
-        </script>
+        <script type = "text/javascript" src="random_story.js"></script>
     </head>
     
     <body>
@@ -15,19 +14,13 @@
         </div>
 
         
-        <button onclick="changeStory()">Click me</button>
+        <button onclick="myFunction()">Click me</button>
 
-        <p id="story">ChangeStory</p>
+        <p id="demo"></p>
 
         <script>
-            function changeStory() {
-                let y = createStory();
-                if (y) {
-                    document.getElementById("story").innerHTML = y;
-                }
-                else {
-                    document.getElementById("story").innerHTML = "SEPEMONGO";
-                }
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "Hello World";
             }
         </script>
     </body>
