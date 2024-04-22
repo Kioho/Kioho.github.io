@@ -29,4 +29,4 @@ function myFunction() {
     document.getElementById("storyAnimal").innerHTML = storyAnimal;
 }
 
-module.exports = { createStory }
+//module.exports = { createStory }
