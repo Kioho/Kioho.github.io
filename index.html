@@ -19,5 +19,10 @@
             <button onclick="myFunction()">Click me</button>
             <p id="randomStory"></p>
         </div>
+        <script>
+            window.onload = (event) => {
+                document.getElementById("randomStory").innerHTML = myFunction();
+            }
+        </script>
     </body>
 </html>
