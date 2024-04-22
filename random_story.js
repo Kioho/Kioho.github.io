@@ -1,4 +1,4 @@
-const {asciiArt} = require('./ASCII_Animals');
+//const {asciiArt} = require('./ASCII_Animals');
 
 
 const firstPart = ['dog', 'cat', 'rabbit', 'squirrel', 'deer'];
@@ -14,10 +14,15 @@ const getPart = storyPartArr => {
 
 function createStory () {
     const parts = [ getPart(firstPart), getPart(secondPart), getPart(thirdPart), getPart(fourthPart)];
-    console.log(asciiArt.animals[parts[0]]);
+    //console.log(asciiArt.animals[parts[0]]);
     const randomStory = `There once was a ${parts[0]} that ${parts[1]} to ${parts[2]} all the way to the ${parts[3]}`;
 
     return randomStory;
-};
+}
+
+function myFunction() {
+                let text = createStory();
+                document.getElementById("demo").innerHTML = text;
+}
 
 module.exports = { createStory }
