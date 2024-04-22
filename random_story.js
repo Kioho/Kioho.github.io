@@ -24,7 +24,7 @@ function createStory () {
 function myFunction() {
     let createStoryList = createStory();
     let text = createStoryList[0];
-    let storyAnimal = createStoryList[1]
+    let storyAnimal = createStoryList[1];
     document.getElementById("randomStory").innerHTML = text;
     document.getElementById("storyAnimal").innerHTML = storyAnimal;
 }
