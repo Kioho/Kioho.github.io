@@ -7,3 +7,7 @@ body {
 .intro p {
     text-align: center;
 }
+#randomStory {
+    text-align: center;
+    font-size: 35px;
+}
