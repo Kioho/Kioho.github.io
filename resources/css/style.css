@@ -12,7 +12,7 @@ img {
 .intro p {
     text-align: center;
 }
-#randomStory, #storyAnimal {
+.story {
     text-align: center;
     font-size: 35px;
     color: white;
