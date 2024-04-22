@@ -3,7 +3,7 @@
     <head>
         <title>Kio's Site</title>
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-        <!--<script type="text/javascript" src="random_story.js"></script>-->
+        <script type="text/javascript" src="random_story.js"></script>
     </head>
     
     <body>
@@ -19,6 +19,7 @@
         <p id="demo"></p>
 
         <script>
+            /*
             //const {asciiArt} = require('./ASCII_Animals');
             const firstPart = ['dog', 'cat', 'rabbit', 'squirrel', 'deer'];
             const secondPart = ['loved', 'hated', 'enjoyed', 'disliked'];
@@ -38,6 +39,7 @@
 
                 return randomStory;
             };
+            */
             async function myFunction() {
                 let text = await createStory();
                 document.getElementById("demo").innerHTML = text;
