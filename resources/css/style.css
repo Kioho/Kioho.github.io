@@ -10,4 +10,5 @@ body {
 #randomStory, #storyAnimal {
     text-align: center;
     font-size: 35px;
+    color: white;
 }
