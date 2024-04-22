@@ -43,4 +43,4 @@ const animals = {
 const asciiArt = {
   animals
 };
-module.exports = { asciiArt }
+module.exports = { asciiArt };
