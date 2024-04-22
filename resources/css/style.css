@@ -7,7 +7,7 @@ body {
 .intro p {
     text-align: center;
 }
-#randomStory {
+#randomStory, #storyAnimal {
     text-align: center;
     font-size: 35px;
 }
