@@ -14,17 +14,19 @@ const getPart = storyPartArr => {
 
 function createStory () {
     const parts = [ getPart(firstPart), getPart(secondPart), getPart(thirdPart), getPart(fourthPart)];
-    console.log(asciiArt.animals[parts[0]]);
+    //console.log(asciiArt.animals[parts[0]]);
     const randomStory = `There once was a ${parts[0]} that ${parts[1]} to ${parts[2]} all the way to the ${parts[3]}`;
-
-    return [randomStory, asciiArt.animals[parts[0]];
+    const storyAnimal = asciiArt.animals[parts[0]];
+    const returnList = [randomStory, storyAnimal];
+    return returnList;
 }
 
 function myFunction() {
     let createStoryList = createStory();
     let text = createStoryList[0];
+    let storyAnimal = createStoryList[1]
     document.getElementById("randomStory").innerHTML = text;
-    document.getElementById("storyAnimal").innerHTML = createStoryList[1];
+    document.getElementById("storyAnimal").innerHTML = storyAnimal;
 }
 
 module.exports = { createStory }
