@@ -38,8 +38,9 @@
 
                 return randomStory;
             };
-            function myFunction() {
-              document.getElementById("demo").innerHTML = createStory();
+            async function myFunction() {
+                let text = await createStory();
+                document.getElementById("demo").innerHTML = text;
             }
         </script>
     </body>
