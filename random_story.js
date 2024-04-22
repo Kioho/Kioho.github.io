@@ -21,5 +21,5 @@ async function myFunction() {
     let text = await createStory();
     document.getElementById("randomStory").innerHTML = text;
 }
-
+myFunction();
 //module.exports = { createStory }
