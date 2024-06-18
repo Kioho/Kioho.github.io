@@ -23,6 +23,7 @@
         <script>
             window.onload = (event) => {
                 let tempArr = myFunction();
+                const randomStory = `There once was a ${tempArr[0]} that ${tempArr[1]} to ${tempArr[2]} all the way to the ${tempArr[3]}`;
                 document.getElementById("randomStory").innerHTML = tempArr[0];
                 document.getElementByID("randomASCII_pic").innerHTML =  tempArr[1];
             }
