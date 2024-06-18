@@ -18,10 +18,13 @@
         <div class="story">
             <button onclick="myFunction()">Click me</button>
             <p id="randomStory"></p>
+            <p id="randomASCII_pic"></p>
         </div>
         <script>
             window.onload = (event) => {
-                document.getElementById("randomStory").innerHTML = myFunction();
+                let tempArr = myFunction();
+                document.getElementById("randomStory").innerHTML = tempArr[0];
+                document.getElementByID("randomASCII_pic").innerHTML =  tempArr[1];
             }
         </script>
     </body>
