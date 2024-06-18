@@ -21,7 +21,9 @@ function createStory () {
 
 async function myFunction() {
     let text = await createStory();
-    document.getElementById("randomStory").innerHTML = text;
+
+    return text;
+    //document.getElementById("randomStory").innerHTML = text;
     //document.getElementById("randomASCII_pic").innerHTML = text[1];
 }
 //module.exports = { createStory }
