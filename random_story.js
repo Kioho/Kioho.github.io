@@ -14,8 +14,8 @@ function createStory () {
             return storyPartArr[getRandom(storyPartArr.length)];
         };
         const parts = [getPart(firstPart), getPart(secondPart), getPart(thirdPart), getPart(fourthPart)];
-        const randomStory = [`There once was a ${parts[0]} that ${parts[1]} to ${parts[2]} all the way to the ${parts[3]}`], [parts[0]];
-        resolve(randomStory);
+        //const randomStory = `There once was a ${parts[0]} that ${parts[1]} to ${parts[2]} all the way to the ${parts[3]}`;
+        resolve(parts);
     });
 }
 
